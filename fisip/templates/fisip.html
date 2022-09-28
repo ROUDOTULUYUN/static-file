@@ -1,0 +1,18 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+<style>body {background-color: darkcyan;}
+</style>
+
+    <center>
+        <h1> FAKULTAS ILMU SOSIAL DAN ILMU POLITIK </h1>
+    </center>
+    
+    <h2>Daftar Prodi :</h2>
+    
+    {% for judul in title %} 
+    <li>{{ judul }}</li>
+    {% endfor %}
+
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+<style>body {background-color: sandybrown;}
+</style>
+    <center>
+        <h1> PASCASARJANA </h1>
+    </center>
+    
+    <h2>Daftar Prodi :</h2>
+    
+    {% for judul in title %} 
+    <li>{{ judul }}</li>
+    {% endfor %}
+
+
+{% endblock %}
